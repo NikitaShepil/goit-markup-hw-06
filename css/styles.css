@@ -498,6 +498,8 @@ transition: fill 250ms var(--animation-timing-function),border 250ms var(--anima
   margin-right: 0;
  }
 
+ 
+
 
  /* Футер */
 
@@ -577,10 +579,67 @@ padding-bottom: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 width: 264px;
+ }
 
+ .button-plane{
+  display: block;
+  width: 24px;
+  height: 20px;
+ 
+ }
 
+ .fotter-content-third{
+  padding-left: 80px;
+  display: flex;
+ }
+
+ .third-fotter-text{
+  
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--text-color);
+ }
+
+ .mail-place-fotter{
+  width: 264px;
+  padding: 8px 16px;
+  margin-top: 16px;
+  margin-right: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: transparent;
+color: var(--text-color);
+outline: none;
 
  }
+
+ .fotter-btn{
+  width: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 38px;
+  height: 40px;
+  padding: 8px 24px;
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+background-color: var(--seccondary-logo-color);
+color: var(--text-color);
+border: none;
+border-radius: 4px;
+transition: background-color 250ms var(--animation-timing-function) ,box-shadow 250ms var(--animation-timing-function) ;
+ }
+
+ .fotter-btn:hover,.fotter-btn:focus{
+  background-color: rgba(64, 75, 191, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ }
+
 
 /* Модалка */
 
@@ -634,6 +693,7 @@ width: 264px;
   right: 32px;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms var(--animation-timing-function);
 }
 
 .modal-btn:hover , .modal-btn:focus{
@@ -644,6 +704,7 @@ width: 264px;
 .modal-btn-cross{
   width: 8px;
   fill: black;
+  transition: fill 250ms var(--animation-timing-function);
 }
 
 .modal-btn:hover .modal-btn-cross{
@@ -768,7 +829,6 @@ padding-left: 8px;
   height: 16px;
   border: 1.25px solid #2E2F42;
   border-radius: 2px;
-  
 }
 
 .checkbox{
@@ -779,9 +839,35 @@ padding-left: 8px;
 
 }
 
+.check-box-box{
+  position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+      transition:background-color 250ms var(--animation-timing-function),background-image  250ms var(--animation-timing-function), border250ms var(--animation-timing-function);
+}
+
+.check-box-box:checked + .check-box-place{
+  
+  background-color: #4D5AE5;
+  background-image: url(../images/mark-checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: transparent;
+ 
+
+}
 .privacy-policy{
   color: var(--seccondary-logo-color);
 }
+
 
 .modal-send-button{
   margin:0 auto;
