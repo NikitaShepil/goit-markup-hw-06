@@ -696,6 +696,11 @@ transition: background-color 250ms var(--animation-timing-function) ,box-shadow 
   transition: background-color 250ms var(--animation-timing-function);
 }
 
+.cross-svg-btn{
+  height: 8px;
+  width: 8px;
+}
+
 .modal-btn:hover , .modal-btn:focus{
   background-color: var(--seccondary-logo-color);
 
@@ -703,6 +708,7 @@ transition: background-color 250ms var(--animation-timing-function) ,box-shadow 
 
 .modal-btn-cross{
   width: 8px;
+  height: 8px;
   fill: black;
   transition: fill 250ms var(--animation-timing-function);
 }
