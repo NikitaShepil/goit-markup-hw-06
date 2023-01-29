@@ -511,11 +511,16 @@ transition: fill 250ms var(--animation-timing-function),border 250ms var(--anima
  .fotter-content-secondary{
   margin-left: 120px;
  }
+ 
+
+
 
  .footer-sm-list{
   display: flex;
   
  }
+
+ 
 
  .footer-text-secondary{
   font-family: 'Roboto';
@@ -536,6 +541,8 @@ margin-bottom: 16px;
   margin-right: 16px;
   transition: background-color 250ms var(--animation-timing-function);
  }
+
+
 
  .footer-icon-box:hover,.footer-icon-box:focus{
   background-color: #31D0AA;
@@ -589,7 +596,7 @@ width: 264px;
  }
 
  .fotter-content-third{
-  padding-left: 80px;
+  padding-left: 64px;
   display: flex;
  }
 
